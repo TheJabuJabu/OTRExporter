@@ -42,5 +42,9 @@ void OTRExporter_Text::Save(ZResource* res, const fs::path& outPath, BinaryWrite
 		writer->Write(txt->messages[i].textboxType);
 		writer->Write(txt->messages[i].textboxYPos);
 		writer->Write(txt->messages[i].msg);
+
+		printf("Message id: %d | Message: %s\n", txt->messages[i].id, txt->messages[i].msg.c_str());
 	}
+
+
 }
