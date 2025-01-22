@@ -11,7 +11,7 @@ def chooseROM(verbose=False, non_interactive=False):
             roms.append(rom)
 
     if not (roms):
-        print("Error: No roms located, place one in the OTRExporter directory", file=os.sys.stderr)
+        print("Error: No roms located, place a *.z64 rom in the OTRExporter directory", file=os.sys.stderr)
         sys.exit(1)
 
     if (len(roms) == 1):
